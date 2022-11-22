@@ -1,0 +1,255 @@
+.navContainer {
+  background-color: #7E33E0;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navSecondLink {
+  color: #0D0E43;
+}
+
+.navLogo {
+  margin-right: 75px;
+  font-size: 30px;
+  color: #0D0E43;
+  font-weight: bold;
+}
+
+.navTextInput:focus {
+  outline: none;
+}
+
+.navTextInput {
+  border: 2px solid #F3F2F7;
+  text-align: right;
+}
+
+.navInputIconContainer {
+  background-color: #FB2E86;
+}
+
+.furnitureCarousel {
+  background: url("../public/img/ecommerce_background.png") no-repeat center center/cover;
+  min-height: 85vh;
+}
+
+.insideFurnitureCarousel {
+  height: 100%;
+  padding: 0 350px;
+}
+
+.shopNowBtn {
+  background-color: #FB2E86;
+  border: 0px solid;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.carouselTitle {
+  color: #FB2E86;
+}
+
+.carouselSubtitle {
+  color: #000;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.carouselDesc {
+  color: #8A8FB9;
+}
+
+.titleStyle {
+  color: #0D0E43;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.titleMargin {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.featuredProductCard {
+  box-shadow: 1px 1px 10px #888888;
+  margin: 0;
+}
+
+.featuredProductCardContainer,
+.latestProductCardContainer,
+.trendingProductCardContainer {
+  background-color: #F6F7FB;
+  padding: 20px;
+  margin: 0;
+}
+
+.featuredProductCardDescContainer {
+  text-align: center;
+  padding: 15px;
+}
+
+.featuredProductCardTitle {
+  color: #FB2E86;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.divDecoration {
+  display: inline-block;
+  padding: 2.5px 10px;
+  border-radius: 15px;
+}
+
+.divDecorationMargin {
+  margin: 0 10px;
+}
+
+.divDecorationGreen {
+  background-color: #05E6B7;
+}
+
+.divDecorationBlue {
+  background-color: #00009D;
+}
+
+.divDecorationPink {
+  background-color: #F701A8;
+}
+
+.featuredProductCardCode {
+  color: #151875;
+  font-weight: bold;
+}
+
+.featuredProductCardPrice {
+  color: #151875;
+  font-weight: bold;
+}
+
+.latestProductLink:hover {
+  color: #FB4997;
+  text-decoration: underline;
+}
+
+.latestProductLink {
+  margin: 0 15px;
+  color: #151875;
+  text-decoration: none;
+}
+
+.latestProductTitle {
+  color: #151875;
+  border-bottom: 2px solid #EEEFFB;
+}
+
+.latestProductOriginalPrice {
+  color: #FB2448;
+  text-decoration: line-through;
+}
+
+.latestProductDiscountPrice {
+  color: #151875;
+}
+
+.shopexOfferCard {
+  box-shadow: 1px 1px 5px #888888;
+}
+
+.shopexOfferTitle {
+  color: #151875;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.shopexOfferDesc {
+  color: #1A0B5B50;
+}
+
+.uniqueFeatureSection {
+  background: url("../public/img/unique-feature.png") no-repeat center center/cover;
+  min-height: 80vh;
+}
+
+.uniqueFeatureTitle {
+  color: #151875;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.circleContainer {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.redCircle {
+  background-color: #F52B70;
+}
+
+.greenCircle {
+  background-color: #2BF5CC;
+}
+
+.blueCircle {
+  background-color: #2B2BF5;
+}
+
+.featureDesc {
+  color: #ACABC3;
+  display: inline;
+}
+
+.italianSofa {
+  color: #151875;
+  font-weight: bold;
+}
+
+.italianSofaPrice {
+  color: #151875;
+}
+
+.trendingProductCard {
+  box-shadow: 1px 1px 5px #888888;
+  text-align: center;
+}
+
+.trendingProductTitle {
+  color: #151875;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.trendingProductDiscPrice {
+  color: #151875;
+}
+
+.trendingProductOriginalPrice {
+  color: #15187550;
+  text-decoration: line-through;
+}
+
+.executiveContainer {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 24px;
+}
+
+.productDiscountContainer {
+  height: 40vh;
+  background-color: #FFF6FB;
+}
+
+.productDiscountTwoContainer {
+  margin-top: 80px;
+  height: 40vh;
+  background-color: #EEEFFB;
+}
+
+.executiveImgContainer {
+  background-color: #F5F6F8;
+  padding: 10px 30px;
+}
