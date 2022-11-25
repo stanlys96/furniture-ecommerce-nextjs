@@ -5,10 +5,13 @@ import LatestProductCard from './components/LatestProductCard'
 import ShopexOfferCard from './components/ShopexOfferCard'
 import TrendingProductCard from './components/TrendingProductCard'
 import Image from 'next/image'
+import { AiOutlineCheck } from 'react-icons/ai';
+import TopCategoriesCard from './components/TopCategoriesCard'
+import LatestBlogCard from './components/LatestBlogCard'
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div>
       <div className={[styles.navContainer, 'py-3 text-white'].join(' ')}>
         <div className="container mx-auto flex justify-between">
           <div>
@@ -162,6 +165,111 @@ export default function Home() {
                 <p>$32.00</p>
               </div>
             </div>
+          </div>
+        </div>
+        <p className={[styles.titleStyle, styles.titleMargin, "text-center"].join(" ")}>Discount Item</p>
+        <div className="flex justify-center items-center">
+          <a className={styles.latestProductLink} href="#">Wood Chair</a>
+          <a className={styles.latestProductLink} href="#">Plastic Chair</a>
+          <a className={styles.latestProductLink} href="#">Sofa Collection</a>
+        </div>
+        <div className="grid grid-cols-2 gap-6 container mx-auto">
+          <div className="flex flex-col justify-center items-start">
+            <p className={styles.discountItemTitle}>20% Discount of All Products</p>
+            <p className={[styles.discountItemSubtitle, "my-5"].join(' ')}>Eams Sofa Compact</p>
+            <p className={[styles.discountItemDesc, "mb-5"].join(' ')}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.</p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex items-center">
+                <AiOutlineCheck className={styles.discountItemIcon} /><span className={[styles.discountItemDesc, "ml-2"].join(' ')}>Material expose like metals</span>
+              </div>
+              <div className="flex items-center">
+                <AiOutlineCheck className={styles.discountItemIcon}/><span className={[styles.discountItemDesc, "ml-2"].join(' ')}>Material expose like metals</span>
+              </div>
+              <div className="flex items-center">
+                <AiOutlineCheck className={styles.discountItemIcon}/><span className={[styles.discountItemDesc, "ml-2"].join(' ')}>Material expose like metals</span>
+              </div>
+              <div className="flex items-center">
+                <AiOutlineCheck className={styles.discountItemIcon}/><span className={[styles.discountItemDesc, "ml-2"].join(' ')}>Material expose like metals</span>
+              </div>
+            </div>
+            <button className={[styles.shopNowBtn, 'text-white inline-block mt-5'].join(' ')}>Shop Now</button>
+          </div>
+          <div className="flex justify-center">
+            <Image width={400} height={300} alt="Walao" src="/../public/img/discount-chair.png" />
+          </div>
+        </div>
+        <p className={[styles.titleStyle, styles.titleMargin, "text-center"].join(" ")}>Top Categories</p>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-4 gap-6">
+            <TopCategoriesCard />
+            <TopCategoriesCard />
+            <TopCategoriesCard />
+            <TopCategoriesCard />
+          </div>
+        </div>
+      </div>
+      <div className={[styles.newsletterSection, "flex justify-center items-center flex-col py-14"].join(" ")}>
+        <p className={styles.newsletterDesc}>Get Latest Update By Subscribing<br />To Our Newsletter</p>
+        <button className={[styles.shopNowBtn, 'text-white mt-5'].join(' ')}>Shop Now</button>
+      </div>
+      <div className={[styles.sponsorsSection, "container mx-auto flex justify-center items-center"].join(" ")}>
+        <Image width={900} height={200} alt="sponsors" src="/../public/img/sponsors.png" />
+      </div>
+      <div className={[styles.latestBlogSection, "container mx-auto py-14 mb-14"].join(" ")}>
+        <p className={styles.latestBlogTitle}>Latest Blog</p>
+        <div className="grid grid-cols-3 gap-6">
+          <LatestBlogCard />
+          <LatestBlogCard />
+          <LatestBlogCard />
+        </div>
+      </div>
+      <div className={[styles.footerSection].join(" ")}>
+        <div className={[styles.footerContentContainer, "container mx-auto"].join(" ")}>
+          <div>
+            <p className={[styles.footerTitle, "mb-5"].join(" ")}>Hekto</p>
+            <div className="flex">
+              <input placeholder='Enter Email Address' className={[styles.signUpTextInput].join(' ')} type="text" />
+              <div className={[styles.signUpInputIconContainer, 'px-3 flex items-center justify-center text-white'].join(' ')}>
+                <span>Sign Up</span>
+              </div>
+            </div>
+            <p className={[styles.footerDesc, "my-3"].join(" ")}>Contact Info</p>
+            <p className={styles.footerDesc}>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+          </div>
+          <div>
+            <p className={[styles.footerSubtitle, "mb-5"].join(" ")}>Categories</p>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Laptops & Computers</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Cameras & Photography</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Smart Phones & Tablets</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Video Games & Consoles</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block"].join(" ")}>Waterproof Headphones</a>
+          </div>
+          <div>
+            <p className={[styles.footerSubtitle, "mb-5"].join(" ")}>Customer Care</p>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>My Account</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Discount</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Returns</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Orders History</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block"].join(" ")}>Order Tracking</a>
+          </div>
+          <div>
+            <p className={[styles.footerSubtitle, "mb-5"].join(" ")}>Pages</p>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Blog</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Browse the Shop</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Category</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Pre-Built Pages</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block mb-5"].join(" ")}>Visual Composer Elements</a>
+            <a href="#" className={[styles.footerDesc, "cursor-pointer block"].join(" ")}>WooCommerce Pages</a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.subFooterSection}>
+        <div className={[styles.subFooterContainer, "container mx-auto flex justify-around items-center"].join(" ")}>
+          <span className={styles.footerDesc}>&#169;Webecy - All Rights Reserved</span>
+          <div className='flex'>
+            <Image src="/../public/img/facebook-ic.png" alt="facebook" width={20} height={20} />
+            <Image className="mx-3" src="/../public/img/instagram-ic.png" alt="facebook" width={20} height={20} />
+            <Image src="/../public/img/twitter-ic.png" alt="facebook" width={20} height={20} />
           </div>
         </div>
       </div>

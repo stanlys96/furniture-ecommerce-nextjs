@@ -253,3 +253,160 @@
   background-color: #F5F6F8;
   padding: 10px 30px;
 }
+
+.discountItemTitle {
+  color: #151875;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.discountItemSubtitle {
+  color: #FB2E86;
+  font-size: 21px;
+}
+
+.discountItemDesc {
+  color: #B7BACB;
+}
+
+.discountItemIcon {
+  color: #7569B2;
+}
+
+.topCategoriesImgContainer {
+  width: 200px;
+  height: 200px;
+  background-color: #F6F7FB;
+  border-radius: 50%;
+}
+
+.topCategoriesDesc {
+  padding: 15px 0;
+  color: #151875;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topCategoriesPrice {
+  color: #151875;
+  text-align: center;
+  font-weight: bold;
+}
+
+.newsletterSection {
+  background: url("../public/img/newsletter-bg.png") no-repeat center center/cover;
+  min-height: 75vh;
+}
+
+.newsletterDesc,
+.latestBlogTitle {
+  color: #151875;
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+}
+
+.latestBlogTitle {
+  margin-bottom: 30px;
+}
+
+.sponsorsSection {
+  min-height: 40vh;
+}
+
+.latestBlogCard {
+  box-shadow: 1px 1px 10px #888888;
+  border-radius: 10px;
+}
+
+.latestBlogImgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.latestBlogImg {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.latestBlogDescContainer {
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.latestBlogSpan {
+  color: #151875;
+}
+
+.latestBlogDescTitle {
+  color: #151875;
+  font-weight: bold;
+}
+
+.latestBlogDescSubtitle {
+  color: #72718F;
+}
+
+.latestBlogLink {
+  display: inline-block;
+  color: #151875;
+  margin-top: 15px;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid #151875;
+  cursor: pointer;  
+}
+
+.footerContentContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 24px;
+}
+
+.footerSection {
+  margin-top: 200px;
+  background-color: #EEEFFB;
+  min-height: 60vh;
+  padding: 50px 0;
+}
+
+.signUpTextInput:focus {
+  outline: none;
+}
+
+.signUpTextInput {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 15px;
+}
+
+.signUpInputIconContainer {
+  cursor: pointer;
+  background-color: #FB2E86;
+  padding: 10px 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footerTitle {
+  color: #000;
+  font-size: 38px;
+}
+
+.footerSubtitle {
+  font-size: 22px;
+}
+
+.footerDesc {
+  color: #8A8FB9;
+  font-size: 16px;
+}
+
+.subFooterSection {
+  background-color: #E7E4F8;
+  height: 8vh;
+}
+
+.subFooterContainer {
+  height: 100%;
+}
